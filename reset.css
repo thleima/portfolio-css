@@ -3,3 +3,18 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+@font-face {
+	font-family: 'light';
+	src: url(/src/fonts/BeVietnamPro-Light.ttf);
+}
+
+@font-face {
+	font-family: 'regular';
+	src: url(/src/fonts/BeVietnamPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'bold';
+	src: url(/src/fonts/BeVietnamPro-SemiBold.ttf);
+}
