@@ -1,0 +1,16 @@
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100vw;
+  background-color: lightcoral;
+  opacity: 0;
+  animation: home .4s 1180ms forwards;
+}
+
+@keyframes home {
+  to {
+    opacity: 1;
+  }
+}
