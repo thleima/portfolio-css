@@ -1,0 +1,57 @@
+.wrapper-scroll-reveal {
+  margin-top: 50vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 6rem;
+}
+
+.wrapper-scroll-reveal span {
+  color: hsl(0 0% 100% / 0.2);
+  background-image: linear-gradient(90deg, purple, blue);
+  background-size: 0% 100%;
+  background-clip: text;
+  background-repeat: no-repeat;
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+}
+
+.wrapper-scroll-reveal h2 span {
+  animation-range-start: entry;
+  animation-range-end: cover 40vh;
+  font-family: 'bold';
+  font-size: 4.4rem;
+}
+
+.wrapper-scroll-reveal p span {
+  animation-range-start: entry 32vh;
+  animation-range-end: cover 80vh;
+  font-family: 'light';
+  font-size: 2.2rem;
+}
+
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+  
+}
+
+@media all and (max-width: 480px) {
+  .wrapper-scroll-reveal {
+    padding: 0 2rem;
+  }
+  .wrapper-scroll-reveal h2 span {
+    font-size: 3rem;
+  }
+  .wrapper-scroll-reveal h2 {
+    margin-bottom: 1rem;
+  }
+
+  .wrapper-scroll-reveal p span {
+    font-size: 1.64rem;
+  }
+}
